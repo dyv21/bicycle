@@ -1,0 +1,26 @@
+.promo {
+  margin-top: 245px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 879px;
+  margin: 0 auto;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: $white;
+  letter-spacing: -0.005em;
+  margin-top: 46px;
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: $white;
+  letter-spacing: -0.005em;
+  max-width: 380px;
+}
