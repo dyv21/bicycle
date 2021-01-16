@@ -1,5 +1,7 @@
 .feedback {
   max-width: 327px;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
 }
 
 .feedback__fieldset {
@@ -19,6 +21,7 @@
   padding: 0;
   margin-bottom: 18px;
 }
+
 .feedback__input {
   width: 327px;
   height: 48px;
@@ -41,7 +44,7 @@
   line-height: 21px;
   color: $black;
   background-color: $egg-blue;
-  padding: 16px 52px;
+  padding: 16px 51px 15px 53px;
   border-radius: 6px;
   border:none;
   cursor: pointer;

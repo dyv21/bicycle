@@ -3,8 +3,6 @@
 }
 
 .page-header__wrapper {
-  display: flex;
-  flex-direction: column;
   height: 825px;
   background: $black url("../img/promo-bike.jpg") no-repeat;
   background-size: contain;
@@ -12,6 +10,17 @@
   position: relative;
 }
 
-.page-header__main-nav {
-  margin-bottom: 261px;
+.page-header__grid {
+  max-width: 879px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 62px 255px 267px;
+  margin: 0 auto;
 }
+
+.page-header__title,
+.page-header__feedback {
+  margin-top: 7px;
+}
+
+
