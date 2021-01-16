@@ -1,8 +1,12 @@
 .title {
   max-width: 380px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     max-width: 435px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 90%;
   }
 }
 
@@ -15,11 +19,15 @@
   margin-top: 46px;
   margin-bottom: 25px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
     font-size: 30px;
     line-height: 42px;
-    margin-top: 85px;
+    margin-top: 110px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 95px;
   }
 }
 
@@ -30,8 +38,8 @@
   color: $white;
   letter-spacing: -0.005em;
 
-  @media (max-width: $tablet-width) {
+
+  @media (max-width: $tablet-width-only) {
     font-size: 18px;
   }
 }
-
