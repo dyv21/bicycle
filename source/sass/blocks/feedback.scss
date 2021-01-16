@@ -1,7 +1,9 @@
 .feedback {
   max-width: 327px;
-  grid-row: 3 / 4;
-  grid-column: 3 / 4;
+
+  @media (max-width: $tablet-width) {
+    max-width: 324px;
+  }
 }
 
 .feedback__fieldset {
@@ -10,7 +12,13 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-top: 71px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 2px;
+  }
 }
+
 .feedback__legend {
   color: $white;
   font-weight: 600;
@@ -20,6 +28,12 @@
   letter-spacing: -0.005em;
   padding: 0;
   margin-bottom: 18px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    color: $black;
+    margin-bottom: 29px;
+  }
 }
 
 .feedback__input {
@@ -36,6 +50,12 @@
     color: $nero;
     opacity: 0.14;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+    padding-top: 12px;
+    padding-left: 22px;
+  }
 }
 
 .feedback__btn {
@@ -46,6 +66,9 @@
   background-color: $egg-blue;
   padding: 16px 51px 15px 53px;
   border-radius: 6px;
-  border:none;
-  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    padding: 16px 50px 15px 50px;
+    margin-left: 2px;
+  }
 }

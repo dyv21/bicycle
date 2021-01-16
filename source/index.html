@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин велосипедов</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper container">
         <div class="page-header__grid">
-          <div class="logo">
+          <div class="page-header__logo logo">
             <img src="img/icon-logo.svg" alt="Логотип магазина" width="68" height="20">
           </div>
-          <nav class="page-header__main-nav main-nav">
+          <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="#about" class="main-nav__link">О нас</a>
@@ -29,6 +29,7 @@
                 <a href="#contacts" class="main-nav__link">Контакты</a>
               </li>
             </ul>
+            <button class="btn main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           </nav>
           <div class="page-header__title title">
             <h1 class="title__title">Мы продаем велосипеды</h1>
@@ -113,5 +114,6 @@
         </li>
       </ul>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
