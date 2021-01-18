@@ -1,0 +1,22 @@
+.catalog {
+  text-align: center;
+  background-color: $alice-blue;
+  padding-top: 125px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 37px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 35px;
+  }
+}
+
+.catalog__title {
+  @include title;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 35px;
+  }
+}

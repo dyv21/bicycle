@@ -135,6 +135,10 @@
   .page-header--nojs .page-header__wrapper {
     margin-top: 100vh;
   }
+
+  .page-header--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 

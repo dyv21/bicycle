@@ -1,0 +1,161 @@
+
+.types-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 76.7%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 84.3%;
+  }
+}
+
+.types-list__item {
+  position: relative;
+
+  &:nth-child(1) {
+    margin-top: 8px;
+
+    &::before {
+      position: absolute;
+      top: 158px;
+      left: -58px;
+      content: "";
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 27px solid $egg-blue;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-top: 38px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 47px;
+      border: 8px solid $egg-blue;
+      z-index: 20;
+    }
+
+    &::before {
+      top: -18px;
+      left: -20px;
+    }
+
+    &::after {
+      bottom: 55px;
+      right: -23px;
+    }
+  }
+
+  &:nth-child(3) {
+
+   &::before {
+    position: absolute;
+    top: -33px;
+    right: -35px;
+    content: "";
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 17px solid $egg-blue;
+    z-index: 20;
+   }
+  }
+
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 45.7%;
+
+    &:nth-child(1) {
+      margin-top: 0;
+
+      &::before {
+        width: 127px;
+        height: 127px;
+        border-width: 18px;
+        top: 201px;
+        left: -35px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: 0;
+      margin-bottom: 28px;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+
+    &:nth-child(3) {
+      margin: 0 auto;
+
+      &::before {
+        width: 68px;
+        height: 68px;
+        top: -20px;
+        right: -25px;
+        border-width: 13px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 100%;
+    margin: 0 auto;
+
+
+    &:nth-child(1) {
+      margin-bottom: 20px;
+      &::before {
+        left: -24px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(3) {
+      margin: 0;
+
+      &::before {
+        top: -22px;
+        right: -16px;
+
+      }
+    }
+  }
+}
+
+.types-list__img {
+  position: relative;
+  z-index: 10;
+}
+
+.types-list__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  color: $black;
+  letter-spacing: -0.5px;
+  margin-top: 16px;
+
+  @media (max-width: $tablet-width-only) {
+
+  }
+}

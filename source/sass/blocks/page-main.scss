@@ -1,7 +1,13 @@
 .page-main__about {
-  margin-top: 150px;
+  margin-top: 249px;
+  margin-bottom: 50px;
 
   @media (max-width: $tablet-width-only) {
     margin-top: 10px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 37px;
   }
 }

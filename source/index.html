@@ -48,7 +48,7 @@
         </div>
       </div>
     </header>
-    <main class="page-main container">
+    <main class="page-main">
       <section class="page-main__about about" id="about">
         <h2 class="about__title">Несколько фактов о нас</h2>
         <ul class="about-list">
@@ -75,17 +75,36 @@
         <ul class="types-list">
           <li class="types-list__item">
             <a href="#" class="types-list__link">
-              <img src="img/road-bike.jpg" alt="Дорожный велосипед" width="342" height="503">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/road-bike.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/road-bike-tab.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/road-bike-tab.jpg.jpg">
+                <img class="types-list__img" src="img/road-bike.jpg" alt="Дорожный велосипед" width="342" height="503">
+              </picture>
+
+              <h3 class="types-list__title">Дорожный велосипед</h3>
             </a>
           </li>
           <li class="types-list__item">
             <a href="#" class="types-list__link">
-              <img src="img/mountain-bike.jpg" alt="Горный велосипед" width="342" height="566">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/mountain-bike.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/mountain-bike-tab.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/mountain-bike-tab.jpg">
+                <img class="types-list__img" src="img/mountain-bike.jpg" alt="Горный велосипед" width="342" height="566">
+              </picture>
+              <h3 class="types-list__title">Горный велосипед</h3>
             </a>
           </li>
           <li class="types-list__item">
             <a href="#" class="types-list__link">
-              <img src="img/child-bicycle.jpg" alt="Детский велосипед" width="342" height="512">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/child-bike.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/child-bike-tab.webp" type="image/webp">
+                <source media="(max-width: 1023px)" srcset="img/child-bike-tab.jpg">
+                <img class="types-list__img" src="img/child-bike.jpg" alt="Детский велосипед" width="342" height="512">
+              </picture>
+              <h3 class="types-list__title">Детский велосипед</h3>
             </a>
           </li>
         </ul>
@@ -104,9 +123,11 @@
         <h2 class="contacts__title">Как нас найти?</h2>
         <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
-            <source media="(max-width: 768px)" srcset="img/map-tab.webp" type="image/webp">
-            <source media="(max-width: 768px)" srcset="img/map-tab.jpg">
-            <img class="contacts__map" src="img/map.jpg" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
+          <source media="(max-width: 767px)" srcset="img/map-mob.webp" type="image/webp">
+          <source media="(max-width: 767px)" srcset="img/map-mob.jpg">
+          <source media="(max-width: 1023px)" srcset="img/map-tab.webp" type="image/webp">
+          <source media="(max-width: 1023px)" srcset="img/map-tab.jpg">
+          <img class="contacts__map" src="img/map.jpg" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
         </picture>
       </section>
       <ul class="page-footer__contacts-list contacts-list">
