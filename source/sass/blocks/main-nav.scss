@@ -1,11 +1,14 @@
+
 .main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 876px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $white-20;
   padding-top: 14px;
+
 
   @media (max-width: $tablet-width-only) {
     display: none;
@@ -13,7 +16,7 @@
 }
 
 .main-nav__item {
-  padding: 13px 20px;
+  padding: 13px 21px;
 }
 
 .main-nav__link {
