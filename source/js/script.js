@@ -20,7 +20,7 @@ navToggle.addEventListener('click',() => {
 const anchors = document.querySelectorAll('a[href^="#"]')
 
 anchors.forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', (e) => {
     e.preventDefault();
     const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
     document.querySelector(goto).scrollIntoView({

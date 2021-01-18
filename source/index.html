@@ -70,7 +70,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog" id="types">
+      <section class="page-main__catalog catalog" id="types">
         <h2 class="catalog__title">Виды велосипедов</h2>
         <ul class="types-list">
           <li class="types-list__item">
@@ -78,7 +78,7 @@
               <picture>
                 <source media="(min-width: 1024px)" srcset="img/road-bike.webp" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/road-bike-tab.webp" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/road-bike-tab.jpg.jpg">
+                <source media="(max-width: 1023px)" srcset="img/road-bike-tab.jpg">
                 <img class="types-list__img" src="img/road-bike.jpg" alt="Дорожный велосипед" width="342" height="503">
               </picture>
 
@@ -109,13 +109,25 @@
           </li>
         </ul>
       </section>
-      <section class="video" id="video">
+      <section class="page-main__video video" id="video">
+       <div class="video__wrapper container">
         <h2 class="video__title">Видео про велосипеды</h2>
         <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__clip">
-          <img src="img/video-clip.jpg" alt="Видеоролик" width="929" height="522">
-          <button class="video__btn" type="button" aria-label="Запустить видеоролик"></button>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/video-clip.webp" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/video-clip-tab.webp" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/video-clip-mob.webp" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/video-clip-mob.jpg">
+            <img class="video__img" src="img/video-clip.jpg" alt="Видеоролик" width="929" height="522">
+          </picture>
+          <button class="btn video__btn" type="button" aria-label="Запустить видеоролик">
+            <svg width="65" height="65" class="video__icon">
+              <use xlink:href="img/sprite.svg#icon-play"></use>
+            </svg>
+          </button>
         </div>
+       </div>
       </section>
     </main>
     <footer class="page-footer container">
@@ -123,10 +135,11 @@
         <h2 class="contacts__title">Как нас найти?</h2>
         <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
-          <source media="(max-width: 767px)" srcset="img/map-mob.webp" type="image/webp">
-          <source media="(max-width: 767px)" srcset="img/map-mob.jpg">
+          <source media="(min-width: 1024px)" srcset="img/map.webp" type="image/webp">
           <source media="(max-width: 1023px)" srcset="img/map-tab.webp" type="image/webp">
+          <source media="(max-width: 767px)" srcset="img/map-mob.webp" type="image/webp">
           <source media="(max-width: 1023px)" srcset="img/map-tab.jpg">
+          <source media="(max-width: 767px)" srcset="img/map-mob.jpg">
           <img class="contacts__map" src="img/map.jpg" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
         </picture>
       </section>

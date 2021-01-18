@@ -2,13 +2,17 @@
   text-align: center;
   background-color: $alice-blue;
   padding-top: 125px;
+  padding-bottom: 127px;
+;
 
   @media (max-width: $tablet-width-only) {
     padding-top: 37px;
+    padding-bottom: 45px;
   }
 
   @media (max-width: $tablet-width-only) {
     padding-top: 35px;
+    padding-bottom: 33px;
   }
 }
 
