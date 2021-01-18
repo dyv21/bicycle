@@ -1,5 +1,10 @@
 .page-footer {
   text-align: center;
+  padding-bottom: 80px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 40px;
+  }
 }
 
 .page-footer__contacts {
