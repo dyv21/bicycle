@@ -1,0 +1,7 @@
+.page-main__about {
+  margin-top: 150px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 10px;
+  }
+}

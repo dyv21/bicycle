@@ -7,7 +7,7 @@
 }
 
 .page-header__wrapper {
-  height: 825px;
+  height: 826px;
   background: $black url("../img/promo-bike.jpg") no-repeat;
   background-size: cover;
   background-position: center top;
@@ -18,7 +18,7 @@
     background: $black url("../img/promo-bike-tablet.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 350px;
+    margin-bottom: 420px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,7 +26,7 @@
     background: $black url("../img/promo-bike-mobile.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 350px;
+    margin-bottom: 436px;
   }
 }
 
