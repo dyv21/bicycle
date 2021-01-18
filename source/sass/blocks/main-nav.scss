@@ -23,6 +23,14 @@
   font-weight: 300;
   color: $white;
   opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-nav__toggle {

@@ -44,10 +44,13 @@
 
 .contacts-list__link {
   line-height: 32px;
-  color: $black;
-  opacity: 0.5;
+  color: $black-50;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: $egg-blue;
+  }
 
   @media (max-width: $mobile-width-only) {
     justify-content: center;
@@ -57,6 +60,7 @@
 .contacts-list__icon {
   fill: $egg-blue;
   margin-right: 15px;
+  opacity: 1;
 
   &--phone {
     fill: transparent;

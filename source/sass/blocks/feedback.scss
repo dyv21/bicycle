@@ -87,6 +87,10 @@
   padding: 16px 51px 15px 53px;
   border-radius: 6px;
 
+  &:hover {
+    background-color: lighten($egg-blue, 10%);
+    color: $black-80
+  }
 
   @media (max-width: $tablet-width-only) {
     padding: 17px 50px 13px 50px;

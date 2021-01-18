@@ -140,6 +140,11 @@
 .types-list__img {
   position: relative;
   z-index: 10;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-out;
+  }
 }
 
 .types-list__title {
