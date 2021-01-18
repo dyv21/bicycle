@@ -127,8 +127,17 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__list {
-    display: block;
+  // .main-nav--nojs .main-nav__list {
+  //   display: block;
+  // }
+
+  .page-header--nojs .main-nav__list {
+      display: block;
+      top: -100vh;
+  }
+
+  .page-header--nojs .page-header__wrapper {
+    margin-top: 100vh;
   }
 }
 
