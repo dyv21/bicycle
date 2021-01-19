@@ -20,13 +20,13 @@ if (header && navMain && navToggle) {
 // smooth scroll to anchor
 const anchors = document.querySelectorAll('a[href^="#"]')
 
-anchors.forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
+for(let anchor of anchors) {
+  anchor.addEventListener("click", (e) => {
     e.preventDefault();
     const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
     document.querySelector(goto).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
+      behavior: "smooth",
+      block: "start"
     })
   })
-})
+}
