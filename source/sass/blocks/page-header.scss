@@ -16,6 +16,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: $black url("../img/promo-bike@2.jpg") no-repeat;
     background-size: 1440px 825px;
+    background-position: center top;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -28,6 +29,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: $black url("../img/promo-bike-tablet@2.jpg") no-repeat;
       background-size: 767px 340px;
+      background-position: center top;
     }
   }
 
@@ -41,6 +43,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: $black url("../img/promo-bike-mobile@2.jpg") no-repeat;
       background-size: 319px 390px;
+      background-position: center top;
     }
   }
 }
