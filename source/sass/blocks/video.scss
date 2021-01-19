@@ -107,3 +107,14 @@
     height: 65px;
   }
 }
+.video__img {
+  @media (max-width: $tablet-width-only) {
+    max-width: 503px;
+    max-height: 282px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 288px;
+    max-height: 162.66px;
+  }
+}

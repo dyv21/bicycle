@@ -13,12 +13,22 @@
   background-position: center top;
   position: relative;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: $black url("../img/promo-bike@2.jpg") no-repeat;
+    background-size: 1440px 825px;
+  }
+
   @media (max-width: $tablet-width-only) {
     height: 340px;
     background: $black url("../img/promo-bike-tablet.jpg") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     margin-bottom: 420px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $black url("../img/promo-bike-tablet@2.jpg") no-repeat;
+      background-size: 767px 340px;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -27,6 +37,11 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 437px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $black url("../img/promo-bike-mobile@2.jpg") no-repeat;
+      background-size: 319px 390px;
+    }
   }
 }
 

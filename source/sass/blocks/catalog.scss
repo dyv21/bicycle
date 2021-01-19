@@ -3,6 +3,7 @@
   background-color: $alice-blue;
   padding-top: 125px;
   padding-bottom: 127px;
+  overflow: hidden;
 
   @media (max-width: $tablet-width-only) {
     padding-top: 36px;

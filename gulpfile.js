@@ -11,8 +11,8 @@ const imagemin = require("gulp-imagemin");
 const gulpWebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const jsmin = require("gulp-jsmin");
-const htmlmin = require("gulp-htmlmin");
+// const jsmin = require("gulp-jsmin");
+// const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -87,7 +87,7 @@ exports.server = server;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/img/**"
+    "source/img/**",
   ], {
     base: "source/"
   })
@@ -104,52 +104,55 @@ const clean = () => {
 
 exports.clean = clean;
 
+
+//html & js copy
+
+const copyHtmlJs = () => {
+  return gulp.src([
+    "source/*.html",
+    "source/js/*.js",
+  ], {
+    base: "source/"
+  })
+  .pipe(gulp.dest("build"));
+};
+
+exports.copyHtmlJs = copyHtmlJs;
+
+
 // HTMLmin
 
-const htmlMin = () => {
-return gulp.src("source/*.html")
-.pipe(htmlmin({ collapseWhitespace: true }))
-.pipe(gulp.dest("build"));
-}
+// const htmlMin = () => {
+// return gulp.src("source/*.html")
+// .pipe(htmlmin({ collapseWhitespace: true }))
+// .pipe(gulp.dest("build"));
+// }
 
-exports.htmlMin = htmlMin;
+// exports.htmlMin = htmlMin;
 
 // JSmin
 
-const jsMin = () => {
-  return gulp.src("source/js/**.js")
-    .pipe(jsmin())
-    .pipe(rename({suffix: ".min"}))
-    .pipe(gulp.dest("build/js"));
-}
-exports.jsMin = jsMin;
+// const jsMin = () => {
+//   return gulp.src("source/js/**.js")
+//     .pipe(jsmin())
+//     .pipe(rename({suffix: ".min"}))
+//     .pipe(gulp.dest("build/js"));
+// }
+// exports.jsMin = jsMin;
 
 
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html", gulp.series(htmlMin));
-  gulp.watch("source/js/*.js", gulp.series(jsMin));
+  gulp.watch("source/*.html", gulp.series(copyHtmlJs));
+  gulp.watch("source/js/*.js", gulp.series(copyHtmlJs));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-/*
-const build = () => {
-  return gulp.series(
-    "clean",
-    "copy",
-    "styles",
-    "jsMin",
-    "sprite"
-  )
-};
-
-exports.build = build;
-*/
 
 exports.build = gulp.series(
-  clean, copy, htmlMin, styles, jsMin, images, webp, sprite
+  clean, copy, copyHtmlJs, styles, images, webp, sprite
 );
 
 exports.start = gulp.series(
