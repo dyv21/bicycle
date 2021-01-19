@@ -30,11 +30,3 @@ anchors.forEach(anchor => {
     })
   })
 })
-
-
-const phone = document.querySelector('#phone');
-
-phone.addEventListener('keypress', (event) => {
-
-})
-
