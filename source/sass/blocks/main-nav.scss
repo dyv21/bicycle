@@ -45,6 +45,8 @@
     width: 50px;
     height: 50px;
     background-color: $egg-blue;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -180,7 +182,7 @@
     }
   }
 
-  .main-nav__link {
+  a {
     font-weight: 400;
     color: $tuna;
     font-size: 20px;
