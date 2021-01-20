@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   max-width: 1128px;
 
-  @media (max-width: 1050px) {
+  @media (max-width: $tablet-width-only) {
     max-width: 76.7%;
     gap: 7px;
   }
@@ -19,6 +19,7 @@
 
 .types-list__item {
   position: relative;
+  max-width: 30.4%;
 
   &:first-child {
     margin-top: 8px;
@@ -73,7 +74,7 @@
     }
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: $tablet-width-only) {
     max-width: 45.7%;
 
     &:first-child {
@@ -140,6 +141,7 @@
     position: relative;
     z-index: 10;
     border-radius: 10px;
+    width: 100%;
 
     @media (max-width: $tablet-width-only) {
       max-width: 270px;
