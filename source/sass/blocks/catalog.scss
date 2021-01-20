@@ -17,7 +17,7 @@
 
   h2 {
     @include title;
-    margin-bottom: 49px;
+    margin-bottom: 52px;
 
     @media (max-width: $tablet-width-only) {
       margin-bottom: 35px;

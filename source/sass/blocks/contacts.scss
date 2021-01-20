@@ -1,14 +1,15 @@
 .contacts {
   text-align: center;
+  overflow: hidden;
 
   h2 {
     @include title;
-    margin-bottom: 30px;
-    margin-left: -10px;
+    margin-bottom: 28px;
+    transform: translateX(-5px);
 
     @media (max-width: $tablet-width-only) {
       margin-bottom: 20px;
-      transform: translateX(6px);
+      transform: translateX(0);
     }
 
     @media (max-width: $mobile-width-only) {
@@ -24,6 +25,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
     transform: translateX(-7px);
+
 
     @media (max-width: $tablet-width-only) {
       max-width: 86%;

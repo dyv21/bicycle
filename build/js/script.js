@@ -9,7 +9,7 @@ if (header && navMain && navToggle) {
 
   navToggle.addEventListener('click', () => {
     if (navMain.classList.contains('main-nav--closed')) {
-      openNaMain()
+      openNaMain();
     } else {
       closeNavMain();
     };

@@ -7,8 +7,9 @@
   flex-wrap: wrap;
   max-width: 1128px;
 
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: 1050px) {
     max-width: 76.7%;
+    gap: 7px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -72,7 +73,7 @@
     }
   }
 
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: 1050px) {
     max-width: 45.7%;
 
     &:first-child {
@@ -89,7 +90,7 @@
 
     &:nth-child(2n) {
       margin-top: 0;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
 
       &::before,
       &::after {
@@ -116,7 +117,7 @@
 
 
     &:first-child {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
 
       &::before {
         left: -24px;
@@ -124,7 +125,7 @@
     }
 
     &:nth-child(2n) {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     &:nth-child(3n) {
@@ -138,6 +139,7 @@
   img {
     position: relative;
     z-index: 10;
+    border-radius: 10px;
 
     @media (max-width: $tablet-width-only) {
       max-width: 270px;
