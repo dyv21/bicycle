@@ -94,7 +94,8 @@
     line-height: 21px;
     color: $black;
     background-color: $egg-blue;
-    padding: 16px 51px 15px 53px;
+    padding: 16px 51px 15px 50px;
+    width: 325.13px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -106,10 +107,12 @@
 
     @media (max-width: $tablet-width-only) {
       padding: 17px 50px 13px 50px;
+      width: 321px;
     }
 
     @media (max-width: $mobile-width-only) {
       padding: 13px 32px 15px 32px;
+      width: 286.35px;
     }
   }
 }
