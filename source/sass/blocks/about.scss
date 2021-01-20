@@ -33,20 +33,17 @@
 .about-list__item {
   max-width: 263px;
   max-height: 125px;
+  margin-bottom: 39px;
 
-  &:not(:first-child) .about-list__text {
+  &:not(:first-child) p {
     margin-top: 13px;
-  }
-
-  @media (max-width: $tablet-width-only) {
-    margin-bottom: 39px;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 35px;
 
 
-    &:not(:first-child) .about-list__text {
+    &:not(:first-child) p {
       margin-top: 6px;
     }
   }
@@ -64,7 +61,7 @@
     line-height: 34px;
     letter-spacing: -0.5px;
     color: $black;
-    margin-top: 16px;
+    margin-top: 15px;
 
     @media (max-width: $mobile-width-only) {
       font-size: 18px;
