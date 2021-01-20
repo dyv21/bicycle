@@ -5,10 +5,10 @@
   margin: 0;
   max-width: 876px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid $white-20;
   padding-top: 14px;
-
 
   @media (max-width: $tablet-width-only) {
     display: none;
