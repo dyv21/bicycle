@@ -20,6 +20,7 @@
 
     @media (max-width: $tablet-width-only) {
       margin-right: 92px;
+      margin-top: 3px;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -33,7 +34,7 @@
     margin-top: 2px;
 
     @media (max-width: $tablet-width-only) {
-      margin-top: 1px;
+      margin-top: 3px;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -59,11 +60,13 @@
   svg {
     stroke: $egg-blue;
     fill: transparent;
+    margin-right: 15px;
+    margin-top: -4px;
   }
 
   &:first-child svg {
     fill: $egg-blue;
     stroke: none;
-    margin-right: 15px;
+    margin-top: 0;
   }
 }
