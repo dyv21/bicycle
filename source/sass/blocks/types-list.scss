@@ -19,7 +19,7 @@
 .types-list__item {
   position: relative;
 
-  &:nth-child(1) {
+  &:first-child {
     margin-top: 8px;
 
     &::before {
@@ -34,7 +34,7 @@
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     margin-top: 38px;
 
     &::before,
@@ -58,7 +58,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     &::before {
       position: absolute;
       top: -33px;
@@ -75,7 +75,7 @@
   @media (max-width: $tablet-width-only) {
     max-width: 45.7%;
 
-    &:nth-child(1) {
+    &:first-child {
       margin-top: 0;
 
       &::before {
@@ -87,7 +87,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       margin-top: 0;
       margin-bottom: 28px;
 
@@ -97,7 +97,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       margin: 0 auto;
 
       &::before {
@@ -115,7 +115,7 @@
     margin: 0 auto;
 
 
-    &:nth-child(1) {
+    &:first-child {
       margin-bottom: 20px;
 
       &::before {
@@ -123,11 +123,11 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       margin-bottom: 20px;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       &::before {
         top: -22px;
         right: -16px;
